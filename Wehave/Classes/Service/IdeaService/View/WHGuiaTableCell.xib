@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WHGuiaTableCell" customModule="Wehave" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQZ-IN-sB5">
+                        <rect key="frame" x="70" y="10" width="240" height="80"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Mdi-iA-VIf"/>
+                        </constraints>
+                    </webView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CVm-Of-qnO">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="8LB-7v-vhA"/>
+                            <constraint firstAttribute="height" constant="50" id="yfo-2z-Pm7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Madrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgU-Ru-H7b">
+                        <rect key="frame" x="8" y="70" width="54" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:12 08-07-1028" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA9-vn-yDa">
+                        <rect key="frame" x="89.5" y="98" width="141" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jQZ-IN-sB5" secondAttribute="trailing" constant="10" id="1YR-8v-kCp"/>
+                    <constraint firstItem="KgU-Ru-H7b" firstAttribute="centerX" secondItem="CVm-Of-qnO" secondAttribute="centerX" id="E0d-sH-kAj"/>
+                    <constraint firstItem="CVm-Of-qnO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="IOv-v9-M2z"/>
+                    <constraint firstItem="OA9-vn-yDa" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="10" id="Mbu-KZ-eGN"/>
+                    <constraint firstItem="CVm-Of-qnO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bed-Fw-b6Z"/>
+                    <constraint firstItem="jQZ-IN-sB5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="d8y-CZ-XUG"/>
+                    <constraint firstItem="OA9-vn-yDa" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="dAb-OV-N1P"/>
+                    <constraint firstItem="OA9-vn-yDa" firstAttribute="top" secondItem="jQZ-IN-sB5" secondAttribute="bottom" constant="8" symbolic="YES" id="iXy-Pc-ZbF"/>
+                    <constraint firstItem="KgU-Ru-H7b" firstAttribute="top" secondItem="CVm-Of-qnO" secondAttribute="bottom" constant="10" id="lHt-4L-n2d"/>
+                    <constraint firstItem="jQZ-IN-sB5" firstAttribute="leading" secondItem="CVm-Of-qnO" secondAttribute="trailing" constant="10" id="xw1-35-6Yz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="directionLabel" destination="KgU-Ru-H7b" id="YD0-Jt-2gB"/>
+                <outlet property="iconImage" destination="CVm-Of-qnO" id="4bb-8h-r6i"/>
+                <outlet property="previaWeb" destination="jQZ-IN-sB5" id="dbP-oV-aml"/>
+                <outlet property="timeLabel" destination="OA9-vn-yDa" id="qSc-Ap-aMM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

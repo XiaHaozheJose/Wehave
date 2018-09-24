@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WHQRViewController" customModule="Wehave" customModuleProvider="target">
+            <connections>
+                <outlet property="qrContentLabel" destination="nJc-1Q-Irc" id="nY5-NM-Pta"/>
+                <outlet property="scanAnimate" destination="VVO-Uq-1P9" id="0nT-v5-xVY"/>
+                <outlet property="scanBackGround" destination="PhS-6k-mcC" id="2NG-X1-Hfm"/>
+                <outlet property="scanQRImage" destination="irX-W2-dvV" id="ffi-9F-9Oz"/>
+                <outlet property="topLine" destination="QEv-TX-0aH" id="XsW-AI-8yy"/>
+                <outlet property="view" destination="3Le-Ki-lul" id="3T0-7J-nsk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3Le-Ki-lul">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhS-6k-mcC">
+                    <rect key="frame" x="67" y="213.5" width="240" height="240"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border" translatesAutoresizingMaskIntoConstraints="NO" id="irX-W2-dvV">
+                            <rect key="frame" x="0.0" y="-0.5" width="240" height="240"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="VVO-Uq-1P9">
+                            <rect key="frame" x="0.0" y="-240" width="240" height="240"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="240" id="CNX-fZ-rxG"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="2UD-nS-sQb"/>
+                        <constraint firstItem="VVO-Uq-1P9" firstAttribute="leading" secondItem="PhS-6k-mcC" secondAttribute="leading" id="DHX-CL-kGk"/>
+                        <constraint firstAttribute="width" constant="240" id="LGn-fk-h4z"/>
+                        <constraint firstItem="VVO-Uq-1P9" firstAttribute="top" secondItem="PhS-6k-mcC" secondAttribute="top" constant="-240" id="QEv-TX-0aH"/>
+                        <constraint firstAttribute="bottom" secondItem="irX-W2-dvV" secondAttribute="bottom" id="e5f-zB-6mL"/>
+                        <constraint firstAttribute="trailing" secondItem="VVO-Uq-1P9" secondAttribute="trailing" id="gJT-G4-9au"/>
+                        <constraint firstItem="irX-W2-dvV" firstAttribute="top" secondItem="PhS-6k-mcC" secondAttribute="top" id="tNk-eM-Yyi"/>
+                        <constraint firstItem="irX-W2-dvV" firstAttribute="leading" secondItem="PhS-6k-mcC" secondAttribute="leading" id="wrv-Ra-bTh"/>
+                        <constraint firstAttribute="trailing" secondItem="irX-W2-dvV" secondAttribute="trailing" id="yWo-Qy-RAK"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJc-1Q-Irc">
+                    <rect key="frame" x="10" y="507" width="355" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="HaQ-bF-FuP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.99448055030000004" green="0.2858523597" blue="0.094615009659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+            <constraints>
+                <constraint firstItem="nJc-1Q-Irc" firstAttribute="leading" secondItem="o6y-3R-czv" secondAttribute="leading" constant="10" id="3n8-q4-Y71"/>
+                <constraint firstItem="o6y-3R-czv" firstAttribute="trailing" secondItem="nJc-1Q-Irc" secondAttribute="trailing" constant="10" id="Kpq-n4-R81"/>
+                <constraint firstItem="PhS-6k-mcC" firstAttribute="centerY" secondItem="3Le-Ki-lul" secondAttribute="centerY" id="XzJ-HS-gnk"/>
+                <constraint firstItem="PhS-6k-mcC" firstAttribute="centerX" secondItem="3Le-Ki-lul" secondAttribute="centerX" id="ZXl-hq-9dv"/>
+                <constraint firstItem="o6y-3R-czv" firstAttribute="bottom" secondItem="nJc-1Q-Irc" secondAttribute="bottom" constant="10" id="zbQ-lf-Dwc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="o6y-3R-czv"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qrcode_border" width="51" height="51"/>
+        <image name="qrcode_scanline_qrcode" width="218" height="170"/>
+    </resources>
+</document>

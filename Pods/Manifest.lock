@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.7.0)
+  - Kingfisher (4.5.0)
+  - pop (1.0.10)
+  - SnapKit (4.0.0)
+  - TextFieldEffects (1.4.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - pop
+  - SnapKit
+  - TextFieldEffects
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - pop
+    - SnapKit
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+
+PODFILE CHECKSUM: 494f9cc2e0107f7bc0e091487931166e6b4231ee
+
+COCOAPODS: 1.5.2

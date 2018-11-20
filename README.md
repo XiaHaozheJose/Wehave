@@ -38,6 +38,5 @@ ServerLink https://github.com/XiaHaozheJose/WehaveServer
 ![share](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_21.png)
 
 ### scan code QR
-![share](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_22.png)
-
+![share](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_22png.png)
 

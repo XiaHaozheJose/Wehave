@@ -13,3 +13,31 @@ Framework(Perfect). It has the following features, user authentication, saving u
 uploaded images, sending push notification, and database operations and so no.
 
 ServerLink https://github.com/XiaHaozheJose/WehaveServer
+
+
+### 
+![Autenticacion](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_11.png)
+![Autenticacion](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_12.png)
+![Autenticacion](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_13.png)
+![Autenticacion](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_14.png)
+
+
+### upload Articulo y Imagenes
+![upload](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_15.png)
+
+### Menu View
+![menu](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_16.png)
+
+### upload Guia 
+![upload](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_18.png)
+
+### custom calendar
+![calendar](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_19.png)
+
+### share with apple freamework
+![share](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_21.png)
+
+### scan code QR
+![share](https://github.com/XiaHaozheJose/Wehave/blob/master/Snip20181120_22.png)
+
+
